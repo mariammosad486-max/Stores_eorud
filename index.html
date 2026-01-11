@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>قائمة برندات عروض المنتجات</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-light: #f4f6f9;
+            --bg-dark: #121212;
+            --card-light: #ffffff;
+            --card-dark: #1e1e1e;
+            --text-light: #000;
+            --text-dark: #fff;
+            --primary: #0d6efd;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-light);
+            font-family: Tahoma, Arial;
+            transition: all 0.3s ease;
+        }
+
+        body.dark {
+            background-color: var(--bg-dark);
+            color: var(--text-dark);
+        }
+
+        .page-title {
+            background: linear-gradient(135deg, #0d6efd, #084298);
+            color: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .dark-toggle {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+
+        .brand-card {
+            background-color: var(--card-light);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+
+        body.dark .brand-card {
+            background-color: var(--card-dark);
+        }
+
+        .brand-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+        /* Logo container */
+        .brand-logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 10px;
+        }
+
+        body.dark .brand-logo {
+            background-color: #2a2a2a;
+        }
+
+        .brand-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .brand-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .brand-card a {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container my-5">
+
+    <!-- Title -->
+    <div class="page-title">
+        <h2>قائمة برندات عروض المنتجات التي نتعامل معها</h2>
+
+        <button class="btn btn-light dark-toggle" onclick="toggleDarkMode()">
+            🌙
+        </button>
+    </div>
+
+    <div class="row g-4">
+
+        <!-- Panda -->
+        <div class="col-md-4">
+            <div class="brand-card">
+                <div class="brand-logo">
+                    <img src="panda.png" alt="بنده">
+                </div>
+                <div class="brand-name">بنده</div>
+                <a href="https://leaflet.panda.sa/" target="_blank" class="btn btn-primary w-100">فتح موقع العروض</a>
+            </div>
+        </div>
+
+        <!-- Farm -->
+        <div class="col-md-4">
+            <div class="brand-card">
+                <div class="brand-logo">
+                    <img src="farm.png" alt="المزرعة">
+                </div>
+                <div class="brand-name">المزرعة</div>
+                <a href="https://www.farm.com.sa/ar/Offers_Regions/2" target="_blank" class="btn btn-primary w-100">فتح موقع العروض</a>
+           
+            </div>
+        </div>
+
+        <!-- Al Raya -->
+        <div class="col-md-4">
+            <div class="brand-card">
+                <div class="brand-logo">
+                    <img src="raya.png" alt="الراية">
+                </div>
+                <div class="brand-name">الراية</div>
+                <a href="https://linktr.ee/customerservice98" target="_blank" class="btn btn-primary w-100">فتح موقع العروض</a>
+                <a href="https://x.com/AlRayaMarket?t=9UX1u4iCQzluyrzOI40Exg&s=08" target="_blank" class="btn btn-dark w-100">حساب X</a>
+            </div>
+        </div>
+
+        <!-- Othaim -->
+        <div class="col-md-4">
+            <div class="brand-card">
+                <div class="brand-logo">
+                    <img src="othaim.png" alt="العثيم">
+                </div>
+                <div class="brand-name">العثيم</div>
+                <a href="https://whatsapp.com/channel/0029Vawwbgf23n3bf8P81Z1Q" target="_blank" class="btn btn-success w-100">قناة واتساب</a>
+            </div>
+        </div>
+
+        <!-- Dukan -->
+        <div class="col-md-4">
+            <div class="brand-card">
+                <div class="brand-logo">
+                    <img src="dukan.png" alt="الدكان">
+                </div>
+                <div class="brand-name">الدكان</div>
+                <a href="https://dukan.me/ar/dukan-flyer/page-781944179" target="_blank" class="btn btn-primary w-100">فتح موقع العروض</a>
+
+                <a href="https://whatsapp.com/channel/0029VagQLmH77qVOvttz3Q02" target="_blank" class="btn btn-success w-100">قناة واتساب</a>
+            </div>
+        </div>
+
+        <!-- Lulu -->
+        <div class="col-md-4">
+            <div class="brand-card">
+                <div class="brand-logo">
+                    <img src="lulu.png" alt="لولو">
+                </div>
+                <div class="brand-name">لولو</div>
+                <a href="https://lulu.sa/m/bio" target="_blank" class="btn btn-primary w-100">فتح موقع العروض</a>
+
+                <a href="https://whatsapp.com/channel/0029Vb4PedW7tkj2QVrEH00p" target="_blank" class="btn btn-success w-100">قناة واتساب</a>
+            </div>
+        </div>
+
+        <!-- Tamimi -->
+        <div class="col-md-4">
+            <div class="brand-card">
+                <div class="brand-logo">
+                    <img src="tamimi.png" alt="التميمي">
+                </div>
+                <div class="brand-name">التميمي</div>
+                <a href="https://linktr.ee/tamimimarkets" target="_blank" class="btn btn-primary w-100">فتح موقع العروض</a>
+                <a href="https://www.instagram.com/tamimimarkets/?hl=ar" target="_blank" class="btn btn-outline-primary w-100">انستغرام</a>
+            </div>
+        </div>
+
+        <!-- Bin Dawood -->
+        <div class="col-md-4">
+            <div class="brand-card">
+                <div class="brand-logo">
+                    <img src="bindawood.png" alt="بن داود">
+                </div>
+                <div class="brand-name">بن داود</div>
+                <a href="https://www.bindawood.sa/" target="_blank" class="btn btn-primary w-100">فتح موقع العروض</a>
+
+            </div>
+        </div>
+
+        <!-- Carrefour -->
+        <div class="col-md-4">
+            <div class="brand-card">
+                <div class="brand-logo">
+                    <img src="carrefour.png" alt="كارفور">
+                </div>
+                <div class="brand-name">كارفور</div>
+
+                <a href="https://linktr.ee/CarrefourSaudi" target="_blank" class="btn btn-primary w-100">فتح موقع العروض</a>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark");
+    }
+</script>
+
+</body>
+</html>
